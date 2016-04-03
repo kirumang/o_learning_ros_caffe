@@ -17,7 +17,6 @@ Before you start,
    const std::string RECEIVE_IMG_TOPIC_NAME = "/image_raw";
 
 3. If you want to use VGGNet, manually download the network file from caffe model zoo
-
    main page : https://gist.github.com/ksimonyan/fd8800eeb36e276cd6f9#file-readme-md
    name: CNN_S model from the BMVC-2014 paper: "Return of the Devil in the Details: Delving Deep into Convolutional Nets"
    mean_file_mat: http://www.robots.ox.ac.uk/~vgg/software/deep_eval/releases/bvlc/VGG_mean.mat
