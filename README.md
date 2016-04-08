@@ -1,24 +1,35 @@
 # o_learning_ros_caffe
 Purpose : Make robot autonomously collect image data after one-point supervision of human
           
-          Target Environment (Done)
-          Qt GUI Base + ROS Indigo (Receive image data from Kinect using OpenNI) + Caffe (for Deep learning)
-          Pre-trained network : VGGNet, realtime image classification on GTX980-Ti Environment
+Target Environment (Done)
+
+Qt GUI Base + ROS Indigo (Receive image data from Kinect using OpenNI) + Caffe (for Deep learning)
+
+Pre-trained network : VGGNet, realtime image classification on GTX980-Ti Environment
           
           
-          New Labeling Process
-          [Collect New Data]
-          After human point out a new object, Robot focus one the object and slightly move and re collect the image
-          Robot can collect a bunch of image set during moving around the object
-          [Learning]
-          1. Resize & Initialize last Fully connected layer of the VGGnet (Output size + 1, and all of remains are fixed)
-          2. learning the imagenet Data + Newly Collected Data
+New Labeling Process
+
+[Collect New Data]
+
+After human point out a new object, Robot focus one the object and slightly move and re collect the image
+
+Robot can collect a bunch of image set during moving around the object
+
+[Learning]
+
+1. Resize & Initialize last Fully connected layer of the VGGnet (Output size + 1, and all of remains are fixed)
+
+2. learning the imagenet Data + Newly Collected Data
 
 
 
 Requirements
+
 ROS : Indigo
+
 Caffe : BVLC (https://github.com/BVLC/caffe)
+
 Reference : https://github.com/tzutalin/ros_caffe (ros_caffe sample, tzutalin)
 
 
